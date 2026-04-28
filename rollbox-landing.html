@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roll Box | Kathi Rolls, Burgers, Momos & Fast Food</title>
+  <meta name="description" content="Order fresh kathi rolls, burgers, sandwiches, momos, shakes, pasta, fries and snacks from Roll Box Gaur Yamuna City. Order now on WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Roll Box home">
+        <span class="brand-mark">RB</span>
+        <span class="brand-text">
+          <span class="brand-name">Roll Box</span>
+          <span class="brand-place">Gaur Yamuna City</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-outline" href="tel:+917491081509"><i data-lucide="phone"></i>Call</a>
+        <a class="btn btn-whatsapp js-wa" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Order</a>
+        <button class="icon-btn" id="menuToggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="brand-strip">Award-winning restaurant | 10+ outlets</span>
+          <h1>Roll Box</h1>
+          <p class="hero-kicker">Rolls . Burger . Sandwich . Momos . Shakes . Pasta . Fries . Snacks</p>
+          <p class="hero-text">Fresh kathi rolls, loaded burgers and quick cafe bites from Roll Box, Gaur Yamuna City. Pick your favorites and send your order directly on WhatsApp.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-whatsapp js-wa-order" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Order on WhatsApp</a>
+            <a class="btn btn-primary" href="#menu"><i data-lucide="utensils"></i>View Menu</a>
+            <a class="btn btn-outline" href="#visit"><i data-lucide="map-pin"></i>Get Directions</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="favorite-strip">
+      <div class="container">
+        <aside class="hero-special favorite-card reveal" aria-label="Customer favorite roll">
+          <div class="special-image">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80" alt="Fresh paneer cheese roll">
+          </div>
+          <div class="special-content">
+            <span class="tag">Customer favorite</span>
+            <h2>Paneer Cheese Roll</h2>
+            <p>Creamy paneer, melted cheese, crunchy onions and Roll Box sauces.</p>
+            <div class="special-bottom">
+              <strong>Rs. 110</strong>
+              <button class="add-btn add-featured" type="button" data-id="4">Add to order</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="quick-cats">
+      <div class="container category-row">
+        <a href="#menu" data-jump-filter="veg"><i data-lucide="leaf"></i><span>Veg Rolls</span></a>
+        <a href="#menu" data-jump-filter="nonveg"><i data-lucide="flame"></i><span>Non-Veg Rolls</span></a>
+        <a href="#menu" data-jump-filter="snacks"><i data-lucide="sandwich"></i><span>Burgers & Snacks</span></a>
+        <a href="#menu" data-jump-filter="meals"><i data-lucide="soup"></i><span>Pasta & Meals</span></a>
+      </div>
+    </section>
+
+    <section id="offers" class="offers">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Today's picks</span>
+          <h2 class="section-title">Hot Deals At Roll Box</h2>
+          <p class="section-copy">Combos and offers can change at the outlet. Message us on WhatsApp to confirm today's best deal before ordering.</p>
+        </div>
+        <div class="offer-row">
+          <article class="offer reveal">
+            <span>From Rs. 50</span>
+            <h3>Pocket Friendly Rolls</h3>
+            <p>Classic veg rolls for a quick bite without thinking twice.</p>
+          </article>
+          <article class="offer reveal">
+            <span>Combo Idea</span>
+            <h3>Roll + Fries + Drink</h3>
+            <p>Perfect for lunch breaks, students and evening cravings.</p>
+          </article>
+          <article class="offer reveal">
+            <span>Custom Order</span>
+            <h3>Build Your Roll</h3>
+            <p>Add cheese, egg, paneer or chicken and tell us your spice level.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <div class="menu-head reveal">
+          <div>
+            <span class="eyebrow">Menu</span>
+            <h2 class="section-title">Pick, Add, Send On WhatsApp</h2>
+            <p class="section-copy">Choose your items, check the estimated total and send the complete order to Roll Box on WhatsApp.</p>
+          </div>
+          <div class="menu-tools">
+            <label class="search-wrap" for="menuSearch">
+              <i data-lucide="search"></i>
+              <input id="menuSearch" type="search" placeholder="Search rolls, fries, pasta..." aria-label="Search menu">
+            </label>
+          </div>
+        </div>
+
+        <div class="tabs reveal" id="tabs">
+          <button class="tab active" data-filter="all">All</button>
+          <button class="tab" data-filter="veg">Veg Rolls</button>
+          <button class="tab" data-filter="nonveg">Non-Veg Rolls</button>
+          <button class="tab" data-filter="snacks">Burgers & Snacks</button>
+          <button class="tab" data-filter="meals">Pasta & Meals</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+        <div class="empty-menu" id="emptyMenu">No item matched that search.</div>
+      </div>
+    </section>
+
+    <section id="favorites" class="favorites">
+      <div class="container favorites-grid">
+        <div class="favorites-copy reveal">
+          <span class="eyebrow">Customer favorites</span>
+          <h2 class="section-title">Craving Something Specific?</h2>
+          <p class="section-copy">Roll Box has more than rolls. Grab burgers, sandwiches, momos, shakes, pasta, fries and snacks for takeaway or a quick cafe bite.</p>
+          <div class="mini-list">
+            <span>Paneer rolls</span>
+            <span>Chicken rolls</span>
+            <span>Loaded fries</span>
+            <span>White sauce pasta</span>
+            <span>Grilled sandwiches</span>
+            <span>Burgers</span>
+          </div>
+        </div>
+        <div class="food-mosaic reveal">
+          <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=700&q=80" alt="Burger">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Fries">
+          <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=700&q=80" alt="Pasta">
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Customer love</span>
+          <h2 class="section-title">Fresh, Fast And Filling</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review reveal"><div class="stars">★★★★★</div><p>"Fresh roll, good sauce balance and the order was ready quickly. Best option around Gaur Yamuna City for a quick bite."</p><strong>Rahul S.</strong></article>
+          <article class="review reveal"><div class="stars">★★★★★</div><p>"Paneer roll and fries combo is my usual order. WhatsApp ordering makes it simple when we order from home."</p><strong>Priya M.</strong></article>
+          <article class="review reveal"><div class="stars">★★★★★</div><p>"Affordable menu, good variety and friendly staff. Nice cafe feel for rolls, burgers and snacks."</p><strong>Yash K.</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-copy reveal">
+          <span class="eyebrow">Visit us</span>
+          <h2 class="section-title">Roll Box, Gaur Yamuna City</h2>
+          <p>Lord Krishna Mart, Gaur Yamuna City, Sector 19, Uttar Pradesh 203201.</p>
+          <div class="visit-actions">
+            <a class="btn btn-whatsapp js-wa-location" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Ask Directions</a>
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Roll%20Box%20Lord%20Krishna%20Mart%20Gaur%20Yamuna%20City%20Sector%2019%20UP%20203201"><i data-lucide="navigation"></i>Open Maps</a>
+          </div>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-row"><i data-lucide="phone"></i><span><strong>Call</strong><a href="tel:+917491081509">+91 74910 81509</a></span></div>
+          <div class="info-row"><i data-lucide="message-circle"></i><span><strong>WhatsApp</strong><a class="js-wa" target="_blank" rel="noopener">Chat and order now</a></span></div>
+          <div class="info-row"><i data-lucide="clock"></i><span><strong>Timing</strong>Open daily. Please confirm closing time with the outlet.</span></div>
+          <div class="info-row"><i data-lucide="map-pin"></i><span><strong>Address</strong>Lord Krishna Mart, Gaur Yamuna City, Sector 19, UP 203201</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <span class="eyebrow">Hungry?</span>
+        <h2 class="section-title">Your Roll Is Waiting.</h2>
+        <p>Order your favorites now or visit Roll Box at Gaur Yamuna City.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-whatsapp js-wa-order" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Order on WhatsApp</a>
+          <a class="btn btn-outline" href="tel:+917491081509"><i data-lucide="phone"></i>Call Outlet</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="float-wa js-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i data-lucide="message-circle"></i></a>
+
+  <aside class="order-panel" id="orderPanel" aria-label="Quick order cart">
+    <div class="order-head" id="orderHead">
+      <div>
+        <strong><i data-lucide="shopping-bag"></i>Your Order</strong>
+        <small>Tap to review before WhatsApp</small>
+      </div>
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+    <div class="order-body">
+      <div id="cartItems" class="cart-empty">
+        <i data-lucide="shopping-cart"></i>
+        <span>Your box is empty. Add items from the menu.</span>
+      </div>
+
+      <div class="order-mode" id="orderMode">
+        <button class="mode-btn active" type="button" data-mode="Pickup"><i data-lucide="store"></i>Pickup</button>
+        <button class="mode-btn" type="button" data-mode="Delivery"><i data-lucide="bike"></i>Delivery</button>
+      </div>
+
+      <div class="customer-fields">
+        <label>
+          <span>Name</span>
+          <input id="customerName" type="text" placeholder="Your name">
+        </label>
+        <label>
+          <span>Time</span>
+          <input id="pickupTime" type="text" placeholder="Now / 7:30 PM">
+        </label>
+        <label class="full">
+          <span>Phone number</span>
+          <input id="customerPhone" type="tel" placeholder="Your phone number">
+        </label>
+        <label class="full delivery-field">
+          <span>Delivery address</span>
+          <textarea id="deliveryAddress" placeholder="House / tower / flat, landmark, society..."></textarea>
+        </label>
+        <label class="full">
+          <span>Order note</span>
+          <textarea id="orderNote" placeholder="Less spicy, extra mayo, no onion..."></textarea>
+        </label>
+      </div>
+
+      <div class="total-row">
+        <span>Estimated total</span>
+        <strong id="cartTotal">Rs. 0</strong>
+      </div>
+      <div class="order-actions">
+        <button class="btn btn-outline" id="clearCart" type="button"><i data-lucide="trash-2"></i>Clear</button>
+        <a class="btn btn-whatsapp" id="sendOrder" target="_blank" rel="noopener"><i data-lucide="send"></i>Send on WhatsApp</a>
+      </div>
+      <p class="order-note">Final availability and bill will be confirmed by the outlet.</p>
+    </div>
+  </aside>
+
+  <footer>
+    <div class="container footer-row">
+      <div><strong>Roll Box</strong> | Rolls, Burger, Sandwich, Momos, Shakes, Pasta, Fries, Snacks</div>
+      <div class="footer-links">
+        <a href="#menu">Menu</a>
+        <a class="js-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+917491081509">Call</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
